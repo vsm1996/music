@@ -15,7 +15,7 @@ export type Album = {
     album_cover_uri: string;
 }
 
-const MOCK_ALBUMS = [
+const MOCK_ALBUMS: Album[] = [
     {
         id: 1,
         name: "The Dark Side of the Moon",
@@ -47,14 +47,14 @@ const MOCK_ALBUMS = [
     {
         id: 3,
         name: "The Endless River",
-        release_date: "1980",
+        release_date: "2014",
         artists: [
             {
                 id: 1,
                 name: "Pink Floyd"
             }
         ],
-        num_tracks: 12,
+        num_tracks: 21,
         length: 120,
         album_cover_uri: "http://localhost:3000/images/album-covers/the-endless-river.png"
     },

@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## TODO
+
+- Add other routes that can combine data
+- Add prompt to README (basically look at the routes and decide what to make with the data)
+- Add ability to update data
+  - Option A: Use the JSON, will reset on each restart/change
+  - Option B: Add a SQLite database with ORM that syncs on startup
+- Add other scaffold directories (hooks, components, etc)
