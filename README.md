@@ -5,12 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+
 bun dev
 ```
 
@@ -37,9 +32,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## TODO
 
-- Add other routes that can combine data
-- Add prompt to README (basically look at the routes and decide what to make with the data)
-- Add ability to update data
-  - Option A: Use the JSON, will reset on each restart/change
-  - Option B: Add a SQLite database with ORM that syncs on startup
-- Add other scaffold directories (hooks, components, etc)
+- Add prompt to README
