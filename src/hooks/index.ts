@@ -15,7 +15,7 @@ export const useFetch = (urls: string[]) => {
     setLoading(true)
     setError(null)
 
-    Promise.all(urls.map((url) =>
+    Promise.all(urls.map((url: string) =>
       fetch(url).then((res) => {
         if (!res.ok) {
           throw new Error(`Failed to fetch ${url}: ${res.statusText}`);
@@ -24,13 +24,11 @@ export const useFetch = (urls: string[]) => {
       }))
     ).then(
       data => {
-        console.log("Data fetched:", data);
         setData([data[0], data[1]])
       }
     ).catch(
       error => {
         console.error("Error fetching data:", error);
-        console.log(typeof error)
         setError(error)
       }
     ).finally(

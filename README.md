@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## TODO
 
-- Add prompt to README
+- Consideration: adding keys to iterate through data matrix instead of calling directly with array index. (use case: additional urls add to cached url array)
