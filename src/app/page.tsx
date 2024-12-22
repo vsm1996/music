@@ -46,6 +46,6 @@ export default function Home() {
     <main className="w-dvw h-dvh flex flex-col items-center justify-center">
       <SearchInput handleSearch={handleSearch} searchTerm={searchTerm} />
       <Carousel artists={artists} albums={albums} />
-    </main>
+    </main >
   );
 }
