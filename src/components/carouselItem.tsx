@@ -4,10 +4,9 @@ import { Album } from '@/app/api/v1/_data/data';
 
 const CarouselItem = ({ id, albumArtUrl, title, artist, releaseYear, genre }: Album) => {
   return (
-    <div key={id} className="carousel-item group rounded-full  aspect-square carousel-center flex flex-col items-center p-40 bg-black cursor-pointer">
+    <div key={id} className="carousel-item group hover:drop-shadow-2xl rounded-full  aspect-square carousel-center flex flex-col items-center p-40 bg-black cursor-pointer">
       <div className='grid grid-cols-1 justify-items-center items-center h-full'>
         <div className='col-start-1 row-start-1 bg-black opacity-55'>
-
           <Image
             src={albumArtUrl}
             width={275}
