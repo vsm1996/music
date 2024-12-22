@@ -18,7 +18,10 @@ const CarouselItem = ({ id, albumArtUrl, title, artist, releaseYear, genre }: Al
         </div>
         <div className="mt-3 col-start-1 row-start-1 z-10 text-slate-300">
           <h3 className="group-hover:text-slate-50 transition ease-in-out duration-150 font-bold">{title}</h3>
-          <p className=''>{artist && artist.name}</p>
+          <p className='w-fit'>
+            {artist.name}
+            <span className="group-hover:w-full w-0 block transition-all duration-500 h-0.5 bg-accent" />
+          </p>
           <small>{releaseYear}, {genre}</small>
         </div>
       </div>
